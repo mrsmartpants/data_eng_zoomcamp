@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: staging
+    database: gh-archive-345218
+    schema: dbt_dwh
+    tables:
+        - name: dwh_days
+
+models:
+  - name: stg_commits
+    description: >
+      GitHub commits
